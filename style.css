@@ -1,8 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Důsledky kouření</title>
     <style>
         body {
@@ -37,6 +37,7 @@
             margin: auto;
             background: white;
         }
+        /* Styl pro bloky, které obsahují obrázek i text */
         .content-block {
             display: flex;
             align-items: flex-start;
@@ -65,8 +66,23 @@
             margin: 10px 0;
             color: #444;
         }
-        .text-only {
+        /* Styl pro bloky, kde je pouze text */
+        .text-only-block {
             display: block;
+            margin-bottom: 30px;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .text-only-block:last-child {
+            border-bottom: none;
+        }
+        .text-only-block h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .text-only-block p {
+            margin: 10px 0;
+            color: #444;
         }
         footer {
             text-align: center;
@@ -74,6 +90,21 @@
             background: #333;
             color: white;
             margin-top: 20px;
+        }
+
+        /* Responzivní design pro mobily a tablety */
+        @media (max-width: 768px) {
+            .content-block {
+                flex-direction: column;
+                align-items: center;
+            }
+            .content-block img {
+                width: 100%;
+                max-width: 400px;
+            }
+            .content-block.reverse {
+                flex-direction: column-reverse;
+            }
         }
     </style>
 </head>
@@ -99,7 +130,7 @@
         </div>
     </section>
 
-    <section class="content-block">
+    <section class="content-block reverse">
         <div class="text-content">
             <h2>Vliv na vzhled</h2>
             <p>Kouření způsobuje předčasné stárnutí pokožky, vznik vrásek a zažloutnutí zubů. Často se objevuje zápach z úst a zhoršení kvality pleti.</p>
@@ -108,13 +139,13 @@
         <img src="https://kamenicekdent.cz/uploads/2024/01/jak-vypadaji-zuby-kuraka-a-jak-se-starat-o-zdravy-usmev.webp" alt="Zuby kuřáka">
     </section>
 
-    <section class="content-block text-only">
+    <section class="text-only-block">
         <h2>Závislost</h2>
         <p>Kouření je návykové kvůli nikotinu, který působí na mozek během sekund. Vyvolává krátkodobý pocit uvolnění, na který si tělo zvykne. Kuřák pak potřebuje kouřit stále častěji.</p>
         <p>Závislost je fyzická i psychická – cigarety jsou spojené se stresem, odpočinkem nebo setkáními. Přestat vyžaduje změnu návyků, ale mnoho lidí to zvládlo a cítí se svobodnější.</p>
     </section>
 
-    <section class="content-block text-only">
+    <section class="text-only-block">
         <h2>Kvalita života</h2>
         <p>Kuřáci mají sníženou kondici, únavu a zadýchávání. Kouření zhoršuje spánek, snižuje vnímání chutí a vůní. Zápach a zažloutlé zuby mohou vést k nepříjemným sociálním situacím.</p>
         <p>Pravidelné kupování cigaret je finanční zátěž. Přestat znamená více energie, ušetřené peníze a větší kontrolu nad životem.</p>
