@@ -1,129 +1,119 @@
 
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <title>Důsledky kouření</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        nav {
-            background: #555;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            padding: 20px;
-            max-width: 1000px;
-            margin: auto;
-            background: white;
-        }
-        .content-block {
-            display: flex;
-            align-items: flex-start;
-            gap: 25px;
-            margin-bottom: 30px;
-            padding: 15px 0;
-            border-bottom: 1px solid #eee;
-        }
-        .content-block:last-child {
-            border-bottom: none;
-        }
-        .content-block img {
-            width: 280px;
-            height: auto;
-            border-radius: 10px;
-            flex-shrink: 0;
-        }
-        .content-block .text-content {
-            flex: 1;
-        }
-        .content-block h2 {
-            margin-top: 0;
-            color: #333;
-        }
-        .content-block p {
-            margin: 10px 0;
-            color: #444;
-        }
-        .text-only {
-            display: block;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #333;
-            color: white;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    background: #555;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+}
+.content-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-bottom: 30px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+.content-block:last-child {
+    border-bottom: none;
+}
+.content-block img {
+    width: 280px;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+.content-block .text-content {
+    flex: 1;
+}
+.content-block h2 {
+    margin-top: 0;
+    color: #333;
+}
+.content-block p {
+    margin: 10px 0;
+    color: #444;
+}
+.text-only {
+    display: block;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
 
-<header>
-    <h1>Důsledky kouření</h1>
-</header>
+.fade-in{
+    animation: fadeIn 1s ease forwards;
+}
 
-<nav>
-    <a href="index.html">Domů</a>
-    <a href="proc.html">Proč přestat</a>
-    <a href="kontakt.html">Kontakt</a>
-</nav>
+@keyframes fadeIn{
 
-<main>
-    <section class="content-block">
-        <img src="https://tse1.mm.bing.net/th/id/OIP.0vUyPBSLaELoCyMMd9ImfQHaFC?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Poškozené plíce">
-        <div class="text-content">
-            <h2>Zdravotní problémy</h2>
-            <p>Kouření má vážné dopady na zdraví a ovlivňuje téměř každý orgán. Nejvíce poškozuje plíce, kde dochází k ničení plicní tkáně – to vede k chronickým onemocněním jako dušnost nebo rakovina plic.</p>
-            <p>Negativně působí také na srdce a cévy – zvyšuje krevní tlak a podporuje aterosklerózu, což může vést k infarktu nebo mrtvici. Oslabuje imunitní systém a zhoršuje hojení ran.</p>
-        </div>
-    </section>
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
 
-    <section class="content-block">
-        <div class="text-content">
-            <h2>Vliv na vzhled</h2>
-            <p>Kouření způsobuje předčasné stárnutí pokožky, vznik vrásek a zažloutnutí zubů. Často se objevuje zápach z úst a zhoršení kvality pleti.</p>
-            <p>Škody nevznikají ze dne na den, ale postupně. Čím déle člověk kouří, tím větší riziko komplikací. Dobrou zprávou je, že tělo se po ukončení kouření dokáže regenerovat.</p>
-        </div>
-        <img src="https://kamenicekdent.cz/uploads/2024/01/jak-vypadaji-zuby-kuraka-a-jak-se-starat-o-zdravy-usmev.webp" alt="Zuby kuřáka">
-    </section>
+    to{
+        opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
+    }
 
-    <section class="content-block text-only">
-        <h2>Závislost</h2>
-        <p>Kouření je návykové kvůli nikotinu, který působí na mozek během sekund. Vyvolává krátkodobý pocit uvolnění, na který si tělo zvykne. Kuřák pak potřebuje kouřit stále častěji.</p>
-        <p>Závislost je fyzická i psychická – cigarety jsou spojené se stresem, odpočinkem nebo setkáními. Přestat vyžaduje změnu návyků, ale mnoho lidí to zvládlo a cítí se svobodnější.</p>
-    </section>
+}
 
-    <section class="content-block text-only">
-        <h2>Kvalita života</h2>
-        <p>Kuřáci mají sníženou kondici, únavu a zadýchávání. Kouření zhoršuje spánek, snižuje vnímání chutí a vůní. Zápach a zažloutlé zuby mohou vést k nepříjemným sociálním situacím.</p>
-        <p>Pravidelné kupování cigaret je finanční zátěž. Přestat znamená více energie, ušetřené peníze a větší kontrolu nad životem.</p>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; Konec s kouřením</p>
-</footer>
-
-</body>
-</html>
+nav a.active{
+    font-weight: bold;
+    color: red;
+    border-bottom: 2px solid red;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: #333;
+    padding: 12px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+nav a:hover{
+    background: #555;
+}
+nav a.active{
+    font-weight: bold;
+    background: red;
+    color: white;
+}
