@@ -2,8 +2,67 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background: #555;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+        }
+        /* Styl pro galerii s většími fotkami */
+        .foto-galerie {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+        /* Větší rozměr pro obrázky */
+        .foto-galerie img {
+            width: 100%;
+            max-width: 400px; /* Obrázky jsou nyní větší */
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
@@ -26,6 +85,14 @@
         Pokud chceš přestat kouřit, neboj se požádat o pomoc.
         Existuje mnoho programů a lidí, kteří ti pomůžou.
     </p>
+    <h1 style="text-align: center;">skoro přes 1000 lidí u nás přestalo kouřit</h1>
+
+
+    <div class="foto-galerie">
+        <img src="https://img.freepik.com/premium-photo/diverse-global-faces-symbolizing-unity-world-population-day_1007506-51425.jpg" alt="Ilustrační foto 1">
+        <img src="https://img.freepik.com/premium-photo/back-people-team_1300443-8244.jpg" alt="Ilustrační foto 2">
+        <img src="https://img.freepik.com/premium-photo/happy-african-american-group-enjoying-time-together_269655-5790.jpg?w=2000" alt="Ilustrační foto 3">
+    </div>
 </main>
 
 <footer>
