@@ -7,7 +7,7 @@ body {
 
 /* header */
 header {
-    background-color: hwb(56 5% 7%);
+    background-color: hwb(60 31% 65%);
     color: white;
     text-align: center;
     padding: 20px;
@@ -28,7 +28,7 @@ nav a {
 
 /* hover (jednoduchý efekt) */
 nav a:hover {
-    color: rgb(255, 255, 0);
+    color: rgb(95, 95, 90);
 }
 
 /* obsah */
@@ -51,7 +51,7 @@ img {
 
 /* patička */
 footer {
-    background-color: hwb(56 5% 7%);
+    background-color: hwb(60 35% 63%);
     color: white;
     text-align: center;
     padding: 10px;
